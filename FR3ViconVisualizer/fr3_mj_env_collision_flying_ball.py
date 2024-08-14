@@ -13,7 +13,7 @@ from pathlib import Path
 
 
 class FR3MuJocoEnv:
-    def __init__(self, render=True, xml_name="fr3_mj_env_collision_flying_ball",
+    def __init__(self, render=True, xml_name="fr3_on_table_with_bounding_boxes_flying_ball",
                  urdf_name="fr3_with_camera_and_bounding_boxes",
                  base_pos=[-0.25,0.0,0.824], base_quat=[0.0,0,0,1],
                  cam_distance=3.0, cam_azimuth=0, cam_elevation=-20, cam_lookat=[-0.25,0.0,0.824], dt=1.0/240):
