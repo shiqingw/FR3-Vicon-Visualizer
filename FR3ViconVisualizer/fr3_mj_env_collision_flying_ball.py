@@ -124,7 +124,8 @@ class FR3MuJocoEnv:
         self.data.qvel[9:12] = 0.0
         # self.data.qpos[12:16] = obj_quat
         # self.data.qvel[12:16] = 0.0
-
+        mujoco.mj_step(self.model, self.data)
+        self.viewer.sync()
 
     def step(self, tau, finger_pos):
         frc_applied = np.append(tau, finger_pos)
